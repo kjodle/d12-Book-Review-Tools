@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: d12 Book Review Tools
-Plugin URI:  
+Plugin URI:  https://github.com/kjodle/d12-Book-Review-Tools
 Description: Adds several useful shortcodes for writing book reviews on WordPress
 Version:     1.0
 Author:      Kenneth John Odle
