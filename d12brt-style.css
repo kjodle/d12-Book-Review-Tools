@@ -1,0 +1,16 @@
+#spoiler_notice,
+#ebook_notice {
+	font-weight: bold;
+	font-size: 115%;
+}
+
+#spoiler_notice img,
+#ebook_notice img {
+	vertical-align: middle;
+}
+
+#d12brtspoil,
+#d12brtebook {
+	border: none;
+	margin-right: 10px;
+}
