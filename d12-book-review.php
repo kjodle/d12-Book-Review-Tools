@@ -3,7 +3,7 @@
 Plugin Name: d12 Book Review Tools
 Plugin URI:  https://github.com/kjodle/d12-Book-Review-Tools
 Description: Adds several useful shortcodes for writing book reviews on WordPress
-Version:     1.0
+Version:     1.1
 Author:      Kenneth John Odle
 Author URI:  http://techblog.kjodle.net
 License:     GPL2
@@ -33,3 +33,11 @@ function ebook_shortcode_handler() {
 	'</p></div><div style="clear:both;"></div>';
 }
 add_shortcode( 'ebook', 'ebook_shortcode_handler' );
+
+// Include our update script to update from private repo
+require 'update/puc.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'http://api.kjodle.net/?action=get_metadata&slug=d12-book-review-tools',
+	__FILE__,
+	'atticus-finch'
+);
